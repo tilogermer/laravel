@@ -4,7 +4,7 @@
 
 	<div class="col-sm-8 blog-main">
 
-		<h1>Create a Post</h1>
+		<h1>Publish a Post</h1>
 
 		<hr>
 		
@@ -22,9 +22,16 @@
     <textarea id="body" name="body" class="form-control"></textarea>
   </div>
 
-
+  <div class="form-group">
   <button type="submit" class="btn btn-primary">Publish</button>
+  </div>
+
+  @include('layouts.errors')
+
 </form>
+
+
+
 		
 	</div>
 
