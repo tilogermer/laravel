@@ -4,7 +4,8 @@
 	<title></title>
 </head>
 <body>
-		<p>Hallo</p>
+		<h1>{{ $task->body }}</h1>
+		
 		
 </body>
 </html>
