@@ -9,12 +9,17 @@ class PostsController extends Controller
 {
     public function index(){
 
-    	return view('posts.index');
+    	$posts = Post::latest()->get();
+
+    	return view('posts.index', compact('posts'));
 
     }
 
-    public function show(){
-    	return view('posts.show');
+    public function show($id){
+
+    	$post = Post::find($id);
+
+    	return view('posts.show',compact('post'));
     }
 
     public function create(){
@@ -29,7 +34,7 @@ class PostsController extends Controller
     		'title'=>'required',
     		'body' =>'required'
     		]);
-    	
+
     	$post = new Post;
 
     	$post->title = request('title');
