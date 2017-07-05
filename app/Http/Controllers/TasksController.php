@@ -18,7 +18,7 @@ class TasksController extends Controller
 
 	public function show(Task $task){
 
-		return $task;
+		$tasks = Task::all();
 
     	return view('tasks.show', compact('tasks'));
 	}
