@@ -7,5 +7,24 @@
 
 	{{ $post->body }}
 
+	<hr>
+
+	<div class="comments">	
+
+	<ul class="list-group">
+
+	@foreach ($post->comments as $comment)
+
+	<li class="list-group-item">
+	
+		{{ $comment->body }}
+	</li>
+
+	@endforeach
+
+	</ul>
+
+	</div>
+
 	</div>
 @endsection
