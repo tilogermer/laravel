@@ -9,7 +9,7 @@
 
     <p class="blog-post-meta">
 	{{ $post->user->name }} on 
-    {{ $post->created_at->toFormattedDateString() }} <a href="#"> Tilo</a></p>
+    {{ $post->created_at->toFormattedDateString() }} <a href="#"></a></p>
 
     {{ $post->body }}
 
